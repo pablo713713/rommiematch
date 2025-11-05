@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/rommie_match?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/La_Paz
+    username: root
+    password: aldiva713
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # por ahora: crea/actualiza tablas automaticamente
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
