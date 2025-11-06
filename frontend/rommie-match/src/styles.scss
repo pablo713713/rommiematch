@@ -1,0 +1,14 @@
+@use "tailwindcss";
+
+/* Define tu paleta pastel como tokens v4 */
+@theme {
+  --color-pastel-pink:  #f9c5d1;
+  --color-pastel-blue:  #a7c7e7;
+  --color-pastel-cream: #fff4e6;
+  --color-pastel-lilac: #d9c7e7;
+}
+
+/* Estilo base del sitio */
+body {
+  @apply bg-pastel-cream text-gray-800;
+}
